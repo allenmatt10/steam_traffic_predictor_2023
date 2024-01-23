@@ -1,0 +1,27 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSTM MODEL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='prediction_lstm.css') }}">
+</head>
+<body>
+<h1>LSTM MODEL</h1>
+    <div>
+        <h1>Prediction</h1>
+        <p><b>Root Mean Squared Error:</b> {{ rmse }}</p>
+        <p><b>Mean Average Error:</b> {{ mae }}</p>
+        <p><b>R2 Score:</b> {{ r2 }}</p>
+        <p><b>Mean Squared Error:</b> {{ mse }}</p>
+        <p id="ic">The graph shows 12 days data used for <br>Training (in blue) and 2 days data used for <br>Testing and the prediction is plotted (in red)</p>
+
+        <!-- Display the saved plot  26043-->
+    </div>
+    <img id='ib' src="{{ url_for('static', filename='plot_lstm.png') }}" alt="LSTM Plot" width="500" height="300">
+    <address>Zeren Li | Yi Wei | Allen Mathews<br>DATA602 Final Project<br>Fall 2023<br>University of Maryland</address>
+    <a id='ia' href="/">BACK</a>
+
+</body>
+</html>

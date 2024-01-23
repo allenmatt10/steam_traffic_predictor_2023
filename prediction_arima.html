@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='prediction_arima.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIMA MODEL</title>
+</head>
+<body>
+    <h1>ARIMA MODEL</h1>
+    <div >
+        <h1>Prediction</h1>
+        <p><b>Root Mean Squared Error:</b> {{ rmse }}</p>
+        <p><b>Mean Average Error:</b> {{ mae }}</p>
+        <p><b>R2 Score:</b> {{ r2 }}</p>
+        <p><b>Mean Squared Error:</b> {{ mse }}</p>
+
+        <!-- Display the saved plot -->
+    </div>
+    <img id='ib' src="{{ url_for('static', filename='plot_arima.png') }}" alt="ARIMA Plot" width="500" height="300">
+    <address>Zeren Li | Yi Wei | Allen Mathews<br>DATA602 Final Project<br>Fall 2023<br>University of Maryland</address>
+    <a id='ia' href="/">BACK</a>
+
+</body>
+</html>
