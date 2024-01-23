@@ -1,0 +1,53 @@
+html
+{
+    background-image:url("steam-129.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url("steam-129.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center top;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    COLOR:WHITE;
+}
+title
+{
+    position:center;
+}
+address
+{
+    position: absolute;
+    bottom:1px;
+    left:10px;
+    color:white;
+    text-align: center;
+}
+#ia
+{
+    position: fixed;
+    top:360px;
+    left:750px;
+    padding-top:10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#ia:link, #ia:visited
+{
+    background-color: #02171D;
+    font-size: 25px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+#ia:hover, #ia:active 
+{
+    background-color: #129C5D;
+    border-color: aliceblue;
+    border-style: solid;
+}
+#ib
+{
+    position:fixed;
+    left:400px;
+    top:50px;
+}
